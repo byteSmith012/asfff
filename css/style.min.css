@@ -101,6 +101,7 @@ body {
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
+  text-align: center;
 }
 .btn_header:hover {
   color: #303030;
