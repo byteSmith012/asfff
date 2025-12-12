@@ -393,6 +393,9 @@ body {
   }
   .service__btn {
     padding: 15px;
+    font-size: 19px !important;
+  }
+  .categories .service__btn {
     font-size: 16px !important;
   }
 }
@@ -453,14 +456,13 @@ body {
     width: 100%;
   }
   .nav-tabs .nav-link {
-    font-size: 14px;
+    font-size: 17px;
   }
 }
 
 @media (max-width: 460px) {
-  .btn_header {
-    font-size: 16px;
-  }
+
+
 }
 
 /* Categories section */
@@ -534,7 +536,7 @@ body {
 
 .useful {
   margin-top: 50px;
-} 
+}
 
 .useful__list {
   padding-left: 20px !important;
@@ -556,7 +558,6 @@ body {
 }
 
 @media (max-width: 576px) {
-  
 }
 
 /* Useful section */
