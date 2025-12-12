@@ -313,17 +313,20 @@ body {
 }
 .hero-form__select {
   display: block;
-  border-radius: 5px;
+
   width: 100%;
   padding: 15px;
   border: none;
   outline: 0;
-  -webkit-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
-  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
   margin-top: 20px;
   background: none;
   font-size: 20px;
+}
+
+.hero-form__select-wrapper {
+  -webkit-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);  border-radius: 5px;
 }
 
 .hero-form__btn {
@@ -461,8 +464,6 @@ body {
 }
 
 @media (max-width: 460px) {
-
-
 }
 
 /* Categories section */
