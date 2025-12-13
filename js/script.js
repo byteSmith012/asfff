@@ -39,8 +39,9 @@ $("#comm_slider").slick({
   centerMode: true,
   slidesToScroll: 1,
   centerPadding: "200px",
-  prevArrow: '<button type = "button" class = "slick_prev"><i class="fas fa-chevron-left"></i></ button>',
-  nextArrow: '<button type = "button" class = "slick_next"><i class="fas fa-chevron-right"></i></ button>',
+  prevArrow:
+    '<button type = "button" class = "slick_prev"><svg width="800px" height="800px" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 10L8 14L6 14L-2.62268e-07 8L6 2L8 2L8 6L16 6L16 10L8 10Z" fill="#000000"/></svg></ button>',
+  nextArrow: '<button type = "button" class = "slick_next"></ button>',
   appendArrows: $(".slide_comment"),
   responsive: [
     {

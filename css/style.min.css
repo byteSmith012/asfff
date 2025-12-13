@@ -40,6 +40,33 @@
   font-weight: 400;
   font-style: normal;
 }
+/* inter-tight-regular - cyrillic */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter Tight';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/inter-tight-v9-cyrillic-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* inter-tight-500 - cyrillic */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter Tight';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/inter-tight-v9-cyrillic-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* inter-tight-700 - cyrillic */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter Tight';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/inter-tight-v9-cyrillic-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -140,7 +167,7 @@ body {
 }
 .title_name {
   font-size: 50px;
-  font-family: bebas_bold, sans-serif;
+  font-family: bebas_bold, "Inter Tight", sans-serif;
   text-transform: uppercase;
 }
 .sub_title {
@@ -159,7 +186,7 @@ body {
 }
 .skew_btn {
   font-size: 24px;
-  font-family: bebas_bold, sans-serif;
+  font-family: bebas_bold, "Inter Tight", sans-serif;
   padding: 15px 30px;
   -webkit-box-shadow: inset 0 5px 10px #fff4b7, inset 0 -5px 15px rgba(95, 74, 0, 0.4), 0 10px 10px rgba(95, 74, 0, 0.2);
   box-shadow: inset 0 5px 10px #fff4b7, inset 0 -5px 15px rgba(95, 74, 0, 0.4), 0 10px 10px rgba(95, 74, 0, 0.2);
@@ -264,13 +291,14 @@ body {
   }
   .hero-advantages__item {
     width: calc(50% - 10px);
-    margin-top: 15px;
   }
 }
 @media (max-width: 440px) {
   .hero-advantages__item {
-    width: 100%;
-    margin-top: 15px;
+    min-height: 220px;
+  }
+  .hero-advantages__items .hero-advantages__item:nth-child(3) {
+    display: none;
   }
 }
 /* Hero Advantages Section */
@@ -326,7 +354,8 @@ body {
 .hero-form__select-wrapper {
   -webkit-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
-  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);  border-radius: 5px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
 }
 
 .hero-form__btn {
@@ -334,7 +363,7 @@ body {
   margin-top: 15px;
   text-transform: uppercase;
   background: #ffd800;
-  font-family: bebas_reg, sans-serif;
+  font-family: bebas_reg, "Inter Tight", sans-serif;
   font-size: 25px;
   border: none;
 }
@@ -391,8 +420,12 @@ body {
 }
 
 @media (max-width: 460px) {
+  .services__items-container {
+    gap: 10px;
+  }
   .services__item {
-    width: 100%;
+    min-height: 240px;
+    width: calc(50% - 5px);
   }
   .service__btn {
     padding: 15px;
@@ -463,7 +496,14 @@ body {
   }
 }
 
-@media (max-width: 460px) {
+@media (max-width: 500px) {
+  .categories__tab-item {
+    width: 100% !important;
+  }
+  .categories__tab-item .nav-link {
+    max-width: 100% !important;
+    width: 100% !important;
+  }
 }
 
 /* Categories section */
@@ -887,9 +927,11 @@ body {
   background-color: #fff;
   z-index: 1;
 }
-.slick_next i,
-.slick_prev i {
+.slick_next svg,
+.slick_prev svg {
   color: #ffd800;
+  width: 100%;
+  height: 100%;
 }
 .slick_next:focus,
 .slick_prev:focus {
