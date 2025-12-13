@@ -320,7 +320,7 @@ body {
 }
 @media (max-width: 500px) {
   .hero-form__form {
-    padding: 14px;
+    padding: 17px;
   }
 }
 .hero-form__title {
@@ -424,7 +424,7 @@ body {
     gap: 10px;
   }
   .services__item {
-    min-height: 240px;
+    min-height: 214px;
     width: calc(50% - 5px);
   }
   .service__btn {
