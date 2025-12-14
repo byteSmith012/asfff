@@ -185,10 +185,10 @@
       </section>
       <section class="hero-form" id="hero-form">
         <div class="container">
-          <form action="#" class="hero-form__form">
+          <form method="post" action="/send.php" class="hero-form__form">
             <h2 class="hero-form__title title_name w-100">Отримати прорахунок за 5 хвилин</h2>
-            <input type="text" placeholder="Ім'я" class="hero-form__input" />
-            <input type="text" placeholder="+38 (_) _--" class="hero-form__input" />
+            <input type="text" name="user_name" placeholder="Ім'я" class="hero-form__input" required minlength="2" />
+            <input type="tel" name="user_phone" class="hero-form__input" placeholder="+380XXXXXXXXX" required inputmode="numeric" />
             <!-- <div class="hero-form__select-wrapper">
               <select name="" id="" class="hero-form__select">
                 <option value="Котлован">Котлован</option>
@@ -198,7 +198,7 @@
                 <option value="Інше">Інше</option>
               </select>
             </div> -->
-            <button type="submit" class="hero-form__btn btn_header">залишити заявку</button>
+            <button type="submit" name="send_user" onClick="ga('send','event','links','click','lead');" id="lead" class="hero-form__btn btn_header">залишити заявку</button>
           </form>
         </div>
       </section>
@@ -643,7 +643,7 @@
 
       <section class="prices">
         <div class="container">
-          <h1 class="prices__title title_name text-center">Ціни на оренду екскаватора</h1>
+          <h2 class="prices__title title_name text-center">Ціни на оренду екскаватора</h2>
           <p class="prices__subtitle sub_title text-center">Точна ціна залежить від задачі, ґрунту, доступу до об’єкта та тривалості робіт — але орієнтир скажемо одразу</p>
           <div class="prices__cards">
             <div class="prices__card prices__card--litle">
@@ -1015,18 +1015,20 @@
         </div>
       </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.3.1/dist/lazyload.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.3.1/dist/lazyload.min.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous" defer></script>
     <script
       src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
       integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
       crossorigin="anonymous"
+      defer
     ></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
       integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
       crossorigin="anonymous"
+      defer
     ></script>
-    <script src="./js/script.min.js"></script>
+    <script src="./js/script.min.js" defer></script>
   </body>
 </html>

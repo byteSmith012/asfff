@@ -42,11 +42,11 @@
 }
 /* inter-tight-regular - cyrillic */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap; 
   font-family: 'Inter Tight';
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/inter-tight-v9-cyrillic-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../fonts/inter-tight-v9-cyrillic-regular.woff2') format('woff2');
 }
 
 /* inter-tight-500 - cyrillic */
@@ -60,11 +60,11 @@
 
 /* inter-tight-700 - cyrillic */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
   font-family: 'Inter Tight';
   font-style: normal;
   font-weight: 700;
-  src: url('../fonts/inter-tight-v9-cyrillic-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../fonts/inter-tight-v9-cyrillic-700.woff2') format('woff2');
 }
 
 html {
